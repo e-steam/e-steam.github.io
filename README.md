@@ -1,2 +1,2 @@
-# e-steam.github.io
+# eSTEAM Website
 GitHub Pages website for eSTEAM
