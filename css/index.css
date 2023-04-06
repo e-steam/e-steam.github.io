@@ -1,0 +1,52 @@
+:root {
+    --skewness: 5rem;
+}
+
+body {
+    background-image: url("../resources/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* Slanted sections */
+
+.slanted-container {
+    min-height: 300px;
+    width: 100%!important;
+    clip-path: polygon(0 var(--skewness), 100% 0, 100% calc(100% - var(--skewness)), 0 100%);
+    padding: calc(1.5 * var(--skewness)) var(--skewness) 8rem 8rem;
+    margin: 0;
+    max-width: unset;
+    opacity: 0.9;
+}
+
+/* .slanted-container:nth-of-type(2n) {
+    clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 calc(100% - 10rem));
+} */
+
+.slanted-container:first-of-type {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--skewness)), 0 100%);
+    padding-top: 2rem;
+}
+
+/* Volunteer information */
+.volunteer-name {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.volunteer-picture {
+    border-radius: 100%;
+    border: 5px solid white;
+}
+
+/* Misc */
+
+.header-text {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 25px;
+    margin: 1rem 0;
+}
