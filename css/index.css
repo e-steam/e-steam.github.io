@@ -16,12 +16,13 @@ body {
     min-height: 300px;
     width: 100%!important;
     clip-path: polygon(0 var(--skewness), 100% 0, 100% calc(100% - var(--skewness)), 0 100%);
-    padding: calc(1.5 * var(--skewness)) var(--skewness) 3rem 3rem;
+    padding: calc(1.5 * var(--skewness))  3rem var(--skewness) 3rem;
     opacity: 0.9;
 }
 
 /* .slanted-container:nth-of-type(2n) {
     clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 calc(100% - 10rem));
+    padding: var(--skewness) calc(1.5 * var(--skewness)) 3rem 3rem;
 } */
 
 .slanted-container:first-of-type {
@@ -40,7 +41,22 @@ body {
     border: 5px solid white;
 }
 
+.carousel .row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.carousel .row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Misc */
+
+.card-img-col {
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+}
 
 .header-text {
     color: white;
