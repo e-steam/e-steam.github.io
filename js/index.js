@@ -1,6 +1,6 @@
-window.addEventListener("load", function() {
-    window.location.href = "construction.html"
-})
+// window.addEventListener("load", function() {
+//     window.location.href = "construction.html"
+// })
 
 const containers = document.querySelectorAll(".slanted-container");
 for (let i = 0; i < containers.length; i++) {
