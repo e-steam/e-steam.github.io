@@ -76,3 +76,7 @@ body {
     display: inline-flex;
   }
 }
+
+.header-icon {
+    max-height: 150px;
+}
