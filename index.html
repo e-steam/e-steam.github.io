@@ -12,6 +12,8 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/328d20ce71.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
@@ -164,7 +166,55 @@
       <div class="row">
         <div class="col">
           <h1>Teaching Resources</h1>
-          <p>Coming soon!</p>
+          <p>This section includes a regularly updated collection of resources for teaching</p>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-3 text-center">
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-primary resource-toggle active" data-bs-target="#resource-carousel" data-bs-slide-to="0">Crystal Garden Lesson</button>
+                        <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel" data-bs-slide-to="1">More coming soon!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div id="resource-carousel" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="p-3 bg-light" style="border: 3px solid lightgrey; border-radius: 25px">
+                            <h3>Crystal Garden Lesson</h3>
+                            <p>This lesson uses ... to help students to learn about ... [Brief blurb explaining what the lesson is]</p>
+                            <div class="row text-center align-items-center">
+                                <div class="col">
+                                    <div class="py-4 resource-downloader">
+                                        <p class="m-0">Lesson Plan</p>
+                                        <i class="fa fa-file-word"></i>
+                                        <a class="d-none" target="_blank" href="https://docs.google.com/document/d/1LCz8wj_Nlks_bMPqPwWjPX3p6YUqtVuyM_MiU62GxOs/edit?usp=sharing"></a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="py-4 resource-downloader">
+                                        <p class="m-0">Slideshow</p>
+                                        <i class="fa fa-file-powerpoint"></i>
+                                        <a class="d-none" target="_blank" href="https://docs.google.com/presentation/d/1Rp4scC2uMiCbP0GaYsOEBgmgw0OGv7o4F7lkprvcHUc/edit#slide=id.g2060e810e70_3_38"></a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="py-4 resource-downloader">
+                                        <p class="m-0">Video of crystals growing</p>
+                                        <i class="fa fa-file-video"></i>
+                                        <a class="d-none" target="_blank" href="resources/crystal-gardens_timelapse.mp4" download></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        Check back soon for more!
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

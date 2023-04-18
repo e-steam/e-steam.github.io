@@ -9,3 +9,15 @@ document.querySelectorAll(".volunteer-name").forEach(el => {
     el.innerText = names[i];
     i += 1;
 })
+
+let resources = document.getElementById("resource-carousel");
+resources.addEventListener("slide.bs.carousel", function (e) {
+    document.querySelector(".resource-toggle.active").classList.remove("active");
+    document.querySelectorAll(".resource-toggle")[e.to].classList.add("active");
+});
+
+document.querySelectorAll(".resource-downloader").forEach(el => {
+    el.addEventListener("click", function() {
+        this.querySelector("a").click();
+    })
+})
