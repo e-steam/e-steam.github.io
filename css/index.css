@@ -58,16 +58,16 @@ body {
     text-align: left;
 }
 
-.btn-group-vertical {display: none;}
-.btn-group {
+#contact .btn-group-vertical {display: none;}
+#contact .btn-group {
     display: inline-flex;
-  }
+}
 
 @media only screen and (max-width: 767px) {
-  .btn-group {
+  #contact .btn-group {
     display: none;
   }
-  .btn-group-vertical {
+  #contact .btn-group-vertical {
     display: inline-flex;
   }
 }
