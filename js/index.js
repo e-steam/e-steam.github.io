@@ -3,13 +3,6 @@ for (let i = 0; i < containers.length; i++) {
     containers[i].style.transform = "translateY(calc(-0.25 * " + i.toString() + "* var(--skewness))";
 }
 
-const names = ["Albert Einstein", "Annie Jump-Cannon", "Jocelyn Bell-Burnell", "Edwin Hubble"]
-let i = 0;
-document.querySelectorAll(".volunteer-name").forEach(el => {
-    el.innerText = names[i];
-    i += 1;
-})
-
 let resources = document.getElementById("resource-carousel");
 resources.addEventListener("slide.bs.carousel", function (e) {
     document.querySelector(".resource-toggle.active").classList.remove("active");

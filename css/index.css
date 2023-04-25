@@ -36,6 +36,10 @@ body {
     border: 5px solid white;
 }
 
+.volunteer-desc {
+    font-size: 16px;
+}
+
 .carousel .row.display-flex {
     display: flex;
     flex-wrap: wrap;
