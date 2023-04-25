@@ -67,7 +67,22 @@ body {
     display: inline-flex;
 }
 
+#menu-toggler {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 0.5rem;
+}
+
+.navbar-toggler-icon {
+    width: 2em;
+    height: 2em;
+}
+
 @media only screen and (max-width: 767px) {
+    .navbar-toggler {
+        display: none;
+    }
   #contact .btn-group {
     display: none;
   }

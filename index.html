@@ -16,6 +16,27 @@
     <script src="https://kit.fontawesome.com/328d20ce71.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
+    <button id="menu-toggler" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" data-bs-theme="dark" zorder="10">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="menu" data-bs-theme="dark">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Navigation</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="list-group list-group-flush">
+            <a class="list-group-item" href="#aboutus">About Us</a>
+            <a class="list-group-item" href="#volunteers">Our Volunteers</a>
+            <a class="list-group-item" href="#news">Recent News</a>
+            <a class="list-group-item" href="#resources">Teaching Resources</a>
+            <a class="list-group-item" href="#contact">Contact Us</a>
+        </ul>
+    </div>
+    </div>
+
     <div class="container">
       <div class="row text-center justify-content-center align-items-center mt-5 mb-4 g-0">
         <div class="col header-text">
@@ -42,7 +63,7 @@
       </div>
     </div>
     <div class="container slanted-container" style="background-color: #a7c0cf">
-      <div class="row mb-3">
+      <div id="aboutus" class="row mb-3">
         <div class="col">
           <h1>About Us</h1>
           <p class="about-us-blurb-text">
@@ -70,7 +91,7 @@
           <p class="about-us-blurb-text">As scientists, while we have committed ourselves to a lifetime of learning how the universe works, we have also taken on the responsibility to share that knowledge with everyone, particularly incarcerated students with limited access to a quality education. Together, we are acting as mentors to spark ceaseless curiosity in our students and light the way towards a brighter future.</p>
         </div>
       </div>
-      <div class="row">
+      <div id="volunteers" class="row">
         <div class="col">
           <h3>Our Volunteers</h3>
           <p>This program wouldn't be possible without the word of our spectacular group of volunteers - you can read more about each of them below!</p>
@@ -109,7 +130,7 @@
                 <img src="resources/volunteers/sam_garza.png" class="img-fluid volunteer-picture mb-3">
                 <p class="volunteer-name"><a class="link-dark">Samantha Garza</a></p>
                 <p class="volunteer-pronouns mb-1">she/her</p>
-                <p class="volunteer-desc">PhD Student in Astronomy & Astrobiology</p>
+                <p class="volunteer-desc">PhD Student in Astronomy</p>
             </div>
             <div class="col-12 col-md-4">
                 <img src="resources/volunteers/lucas.png" class="img-fluid volunteer-picture mb-3">
@@ -134,7 +155,7 @@
       </div>
     </div>
 
-    <div class="container slanted-container" style="background-color: #a5d9b5">
+    <div id="news" class="container slanted-container" style="background-color: #a5d9b5">
       <div class="row">
         <div class="col">
           <h1>Recent News</h1>
@@ -170,7 +191,7 @@
       </div>
     </div>
 
-    <div class="container slanted-container" style="background-color: #ad9dcf">
+    <div id="resources" class="container slanted-container" style="background-color: #ad9dcf">
       <div class="row">
         <div class="col">
           <h1>Teaching Resources</h1>
