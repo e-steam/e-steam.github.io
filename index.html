@@ -1,485 +1,697 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>eSTEAM</title>
-    <link rel="icon" type="image/x-icon" href="resources/logo.ico" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>eSTEAM</title>
+  <link rel="icon" type="image/x-icon" href="resources/logo.ico" />
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/index.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
 
-    <script src="https://kit.fontawesome.com/328d20ce71.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/index.css" rel="stylesheet" />
 
-    <button id="menu-toggler" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" data-bs-theme="dark" zorder="10">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="menu" data-bs-theme="dark">
+  <script src="https://kit.fontawesome.com/328d20ce71.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <button id="menu-toggler" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu"
+    data-bs-theme="dark" zorder="10">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="menu" data-bs-theme="dark">
     <div class="offcanvas-header">
-        <h5 class="offcanvas-title">Navigation</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+      <h5 class="offcanvas-title">Navigation</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
     </div>
     <div class="offcanvas-body">
-        <ul class="list-group list-group-flush">
-            <a class="list-group-item" href="#aboutus">About Us</a>
-            <a class="list-group-item" href="#volunteers">Our Volunteers</a>
-            <a class="list-group-item" href="#news">Recent News</a>
-            <a class="list-group-item" href="#resources">Teaching Resources</a>
-            <a class="list-group-item" href="#contact">Contact Us</a>
-        </ul>
+      <ul class="list-group list-group-flush">
+        <a class="list-group-item" href="#aboutus">About Us</a>
+        <a class="list-group-item" href="#volunteers">Our Volunteers</a>
+        <a class="list-group-item" href="#news">Recent News</a>
+        <a class="list-group-item" href="#resources">Teaching Resources</a>
+        <a class="list-group-item" href="#contact">Contact Us</a>
+      </ul>
     </div>
-    </div>
+  </div>
 
-    <div class="container">
-      <div class="row text-center justify-content-center align-items-center mt-5 mb-4 g-0">
-        <div class="col header-text">
-          <h1 class="fw-bold display-6">Education in Science, Technology, Engineering, <span style="color: #a7c0cf">Astrobiology</span>/Art, and Math</h1>
-          <h2>University of Washington Prison Outreach Program</h2>
-        </div>
-        <div class="col-md-3 col-12">
-          <img src="resources/logo-min.png" class="img-fluid" />
-        </div>
+  <div class="container">
+    <div class="row text-center justify-content-center align-items-start mt-5 mb-4 g-0">
+      <div class="col header-text">
+        <h1 class="fw-bold display-6">Education in Science, Technology, Engineering, <span
+            style="color: #a7c0cf">Astrobiology</span>/Art, and Math</h1>
+        <h2>University of Washington Prison Outreach Program</h2>
       </div>
-      <div class="row text-center justify-content-center align-items-center mt-2 mb-4 mx-5">
-        <div class="col">
-            <img src="resources/uw.png" class="img-fluid header-icon">
-        </div>
-        <div class="col">
-            <img src="resources/uw-astrobio.png" class="img-fluid header-icon">
-        </div>
-        <div class="col">
-            <img src="resources/autodesk.png" class="img-fluid header-icon">
-        </div>
-        <div class="col">
-            <img src="resources/nasa-space-grant.png" class="img-fluid header-icon">
-        </div>
+      <div class="col-md-3 col-12">
+        <img src="resources/logo-min.png" class="img-fluid" />
       </div>
     </div>
-    <div class="container slanted-container" style="background-color: #a7c0cf">
-      <div id="aboutus" class="row mb-3">
-        <div class="col">
-          <h1>About Us</h1>
-          <p class="about-us-blurb-text">
-            We are a group of University of Washington Astrobiology PhD students committed to raising the eSTEAM (education in Science, Technology, Engineering, Astrobiology/Art, Mathematics) of incarcerated youth in the Seattle area with one-on-one tutoring and exciting hands-on science experiments. We founded eSTEAM to provide vital educational support and mentorship to incarcerated students to help them navigate a new path and reconnect them to a life outside the system. We are fighting to mitigate the vicious cycle of crime and punishment and the social inequities that it deepens.
-          </p>
-          <p class="about-us-blurb-text">
-            According to the ACLU, <a class="link-light" href="https://www.aclu.org/issues/juvenile-justice/youth-incarceration/americas-addiction-juvenile-incarceration-state-state">nearly 60,000 children are currently incarcerated in the United States</a>. In the state of Washington alone, <a class="link-light" href="https://www.aclu.org/issues/juvenile-justice/youth-incarceration/americas-addiction-juvenile-incarceration-state-state">149 children for every 100,000 residents</a> are confined in prisons and jails. Though they are entitled to an education while housed in any one of the
-            <a class="link-light" href="https://www.themarshallproject.org/2016/03/03/there-are-still-80-youth-prisons-in-the-u-s-here-are-five-things-to-know-about-them">80 youth correctional facilities located in the US</a>, evidence suggests that <a class="link-light" href="https://kidsimprisoned.news21.com/education-juvenile-detention/">these programs are severely lacking</a> with irregular school hours, consistent interruptions, uneven or unavailable learning materials, and limited class offerings. In fact,
-            <a class="link-light" href="https://kidsimprisoned.news21.com/education-juvenile-detention/">physics classes were offered at only 8% of schools under the purview of the juvenile justice system</a> compared with 60% of public high schools.
-          </p>
-          <p class="about-us-blurb-text">
-            Racial inequities that exist in most other areas of society, <a class="link-light" href="https://www.sciencenews.org/article/science-technology-math-race-ethnicity-gender-diversity-gap">including STEM professions</a> like <a class="link-light" href="https://www.smithsonianmag.com/science-nature/how-can-we-give-black-and-latino-astronomers-foundation-reach-stars-180960213/">astronomy</a>, are also reproduced in youth prisons and jails. <a class="link-light" href="https://www.courts.wa.gov/subsite/mjc/docs/MJC_Report_2020_Final_Final.pdf">Regardless of gender</a>, children of color
-            are overrepresented in the penal system; <a class="link-light" href="https://www.sentencingproject.org/fact-sheet/black-disparities-in-youth-incarceration/">Black youth are four times more likely than their white peers</a> to be both detained in or sentenced to juvenile facilities.
-          </p>
-          <p class="about-us-blurb-text">
-            Even if incarcerated children manage to leave these facilities, their outcomes do not often improve. Studies show that youth who have been incarcerated have a high likelihood of returning to the system in the future, with <a class="link-light" href="https://digitalcommons.law.seattleu.edu/cgi/viewcontent.cgi?article=1118&context=korematsu_center">49.6%</a> of youth released in 2015 from juvenile rehabilitation in Washington ultimately recidivating. Even worse,
-            <a class="link-light" href="https://www.ojp.gov/ncjrs/virtual-library/abstracts/overcoming-barriers-school-reentry">two-thirds of incarcerated children do not return to school upon being released</a>; <a class="link-light" href="https://bjs.ojp.gov/content/pub/pdf/ecp.pdf">historically</a>, less than 25% of incarcerated people obtain high school diplomas or GEDs, and less than 13% attain a college degree.
-          </p>
-          <p class="text-center fw-bold fs-5">We founded eSTEAM with the conviction that compassionate <a class="link-light" href="https://ojjdp.ojp.gov/programs/mentoring">mentorship</a> and <a class="link-light" href="https://www.americanprogress.org/article/education-opportunities-prison-key-reducing-crime/">quality education</a> can disrupt this cycle and reconnect incarcerated children to their communities and the world.</p>
-          <p class="about-us-blurb-text">
-            We leverage our advanced degrees and diverse backgrounds to provide much-needed one-on-one tutoring to middle through high school students at a juvenile rehabilitation center located near Seattle. We have tutored dozens of students in subjects including Astronomy, Geometry, Algebra, Biology, Chemistry, Spanish, Art History, English Literature, Financial Math, and Health Sciences. More recently, we have also begun to leverage university resources and private funding to provide unique, hands-on science experiments for the students
-            after-school (see our publicly available lesson plans with more to come!). Since we began our initiative in February 2022, we have had the privilege of witnessing eSTEAM-supported students graduate or complete their time at the correctional facility and pursue more traditional education.
-          </p>
-
-          <p class="about-us-blurb-text">As scientists, while we have committed ourselves to a lifetime of learning how the universe works, we have also taken on the responsibility to share that knowledge with everyone, particularly incarcerated students with limited access to a quality education. Together, we are acting as mentors to spark ceaseless curiosity in our students and light the way towards a brighter future.</p>
-        </div>
+    <div class="row text-left justify-content-left align-items-start mt-2 mb-4 mx-5">
+      <!--swap to center when more sponsors-->
+      <div class="col">
+        <img src="resources/uw.png" class="img-fluid header-icon">
       </div>
-      <div id="volunteers" class="row">
-        <div class="col">
-          <h3>Our Volunteers</h3>
-          <p>This program wouldn't be possible without the work of our spectacular group of volunteers - you can read more about each of them below!</p>
-          <div class="row volunteer-grid text-center">
-            <div class="col-12 col-md-4">
-                <img src="resources/volunteers/sam_gilbert.jpg" class="img-fluid volunteer-picture mb-3">
-                <p class="volunteer-name"><a class="link-dark" href="https://samrosegilbert.github.io/">Samantha Gilbert-Janizek</a></p>
-                <p class="volunteer-pronouns mb-1">she/her</p>
-                <p class="volunteer-desc">PhD Student in Astronomy & Astrobiology</p>
-            </div>
-            <div class="col-12 col-md-4">
-                <img src="resources/volunteers/lupita.png" class="img-fluid volunteer-picture mb-3">
-                <p class="volunteer-name"><a class="link-dark" href="http://lupitatovar.github.io/">Guadalupe Tovar Mendoza</a></p>
-                <p class="volunteer-pronouns mb-1">she/ella</p>
-                <p class="volunteer-desc">PhD Student in Astronomy & Astrobiology</p>
-            </div>
-            <div class="col-12 col-md-4">
-                <img src="resources/volunteers/autum.png" class="img-fluid volunteer-picture mb-3">
-                <p class="volunteer-name"><a class="link-dark" href="http://autumdowney.com/">Autum R. Downey</a></p>
-                <p class="volunteer-pronouns mb-1">she/her</p>
-                <p class="volunteer-desc">PhD Student in Geomicrobiology (Earth & Space Sciences)</p>
-            </div>
-            <div class="col-12 col-md-4">
-                <img src="resources/volunteers/liza.png" class="img-fluid volunteer-picture mb-3">
-                <p class="volunteer-name"><a class="link-dark">Liza Young</a></p>
-                <p class="volunteer-pronouns mb-1">she/her</p>
-                <p class="volunteer-desc">Astrobiology Program Administrator</p>
-            </div>
-            <div class="col-12 col-md-4">
-                <img src="resources/volunteers/megan.png" class="img-fluid volunteer-picture mb-3">
-                <p class="volunteer-name"><a class="link-dark">Megan Gialluca</a></p>
-                <p class="volunteer-pronouns mb-1">she/her</p>
-                <p class="volunteer-desc">PhD Student in Astronomy & Astrobiology</p>
-            </div>
-            <div class="col-12 col-md-4">
-                <img src="resources/volunteers/sam_garza.png" class="img-fluid volunteer-picture mb-3">
-                <p class="volunteer-name"><a class="link-dark">Samantha Garza</a></p>
-                <p class="volunteer-pronouns mb-1">she/her</p>
-                <p class="volunteer-desc">PhD Student in Astronomy</p>
-            </div>
-            <div class="col-12 col-md-4">
-                <img src="resources/volunteers/lucas.png" class="img-fluid volunteer-picture mb-3">
-                <p class="volunteer-name"><a class="link-dark">Lucas Fifer</a></p>
-                <p class="volunteer-pronouns mb-1">he/him</p>
-                <p class="volunteer-desc">PhD Student in Earth & Space Sciences, Astrobiology Program</p>
-            </div>
-            <div class="col-12 col-md-4">
-                <img src="resources/volunteers/pete.png" class="img-fluid volunteer-picture mb-3">
-                <p class="volunteer-name"><a class="link-dark">Pete Wynn</a></p>
-                <p class="volunteer-pronouns mb-1">he/him</p>
-                <p class="volunteer-desc">PhD Student in Geochemistry & Astrobiology</p>
-            </div>
-            <div class="col-12 col-md-4">
-                <img src="resources/volunteers/jake.JPG" class="img-fluid volunteer-picture mb-3">
-                <p class="volunteer-name"><a class="link-dark">Jake Kurlander</a></p>
-                <p class="volunteer-pronouns mb-1">he/him</p>
-                <p class="volunteer-desc">PhD Student in Astronomy</p>
-            </div>
+      <!-- update sponsers here -->
+    </div>
+  </div>
+  <div class="container slanted-container" style="background-color: #a7c0cf">
+    <div id="aboutus" class="row mb-3">
+      <div class="col">
+        <h1>About Us</h1>
+        <p class="about-us-blurb-text">
+          We are a group of University of Washington graduate students committed to raising the eSTEAM
+          (education in Science, Technology, Engineering, Astrobiology/Art, Mathematics) of incarcerated youth in the
+          Seattle area with one-on-one tutoring and exciting hands-on science experiments. We founded eSTEAM to provide
+          vital educational support and mentorship to incarcerated students to help them navigate a new path and
+          reconnect them to a life outside the system. We are fighting to mitigate the vicious cycle of crime and
+          punishment and the social inequities that it deepens.
+        </p>
+        <p class="about-us-blurb-text">
+          According to the ACLU, <a class="link-light"
+            href="https://www.aclu.org/issues/juvenile-justice/youth-incarceration/americas-addiction-juvenile-incarceration-state-state" target="_blank">nearly
+            60,000 children are currently incarcerated in the United States</a>. In the state of Washington alone, <a
+            class="link-light"
+            href="https://www.aclu.org/issues/juvenile-justice/youth-incarceration/americas-addiction-juvenile-incarceration-state-state" target="_blank">149
+            children for every 100,000 residents</a> are confined in prisons and jails. Though they are entitled to an
+          education while housed in any one of the
+          <a class="link-light"
+            href="https://www.themarshallproject.org/2016/03/03/there-are-still-80-youth-prisons-in-the-u-s-here-are-five-things-to-know-about-them" target="_blank">80
+            youth correctional facilities located in the US</a>, evidence suggests that <a class="link-light"
+            href="https://kidsimprisoned.news21.com/education-juvenile-detention/" target="_blank">these programs are severely
+            lacking</a> with irregular school hours, consistent interruptions, uneven or unavailable learning materials,
+          and limited class offerings. In fact,
+          <a class="link-light" href="https://kidsimprisoned.news21.com/education-juvenile-detention/" target="_blank">physics classes
+            were offered at only 8% of schools under the purview of the juvenile justice system</a> compared with 60% of
+          public high schools.
+        </p>
+        <p class="about-us-blurb-text">
+          Racial inequities that exist in most other areas of society, <a class="link-light"
+            href="https://www.sciencenews.org/article/science-technology-math-race-ethnicity-gender-diversity-gap" target="_blank">including
+            STEM professions</a> like <a class="link-light"
+            href="https://www.smithsonianmag.com/science-nature/how-can-we-give-black-and-latino-astronomers-foundation-reach-stars-180960213/" target="_blank">astronomy</a>,
+          are also reproduced in youth prisons and jails. <a class="link-light"
+            href="https://www.courts.wa.gov/subsite/mjc/docs/MJC_Report_2020_Final_Final.pdf" target="_blank">Regardless of gender</a>,
+          children of color
+          are overrepresented in the penal system; <a class="link-light"
+            href="https://www.sentencingproject.org/fact-sheet/black-disparities-in-youth-incarceration/" target="_blank">Black youth
+            are four times more likely than their white peers</a> to be both detained in or sentenced to juvenile
+          facilities.
+        </p>
+        <p class="about-us-blurb-text">
+          Even if incarcerated children manage to leave these facilities, their outcomes do not often improve. Studies
+          show that youth who have been incarcerated have a high likelihood of returning to the system in the future,
+          with <a class="link-light"
+            href="https://digitalcommons.law.seattleu.edu/cgi/viewcontent.cgi?article=1118&context=korematsu_center" target="_blank">49.6%</a>
+          of youth released in 2015 from juvenile rehabilitation in Washington ultimately recidivating. Even worse,
+          <a class="link-light"
+            href="https://www.ojp.gov/ncjrs/virtual-library/abstracts/overcoming-barriers-school-reentry" target="_blank">two-thirds of
+            incarcerated children do not return to school upon being released</a>; <a class="link-light"
+            href="https://bjs.ojp.gov/content/pub/pdf/ecp.pdf" target="_blank">historically</a>, less than 25% of incarcerated people
+          obtain high school diplomas or GEDs, and less than 13% attain a college degree.
+        </p>
+        <p class="text-center fw-bold fs-5">We founded eSTEAM with the conviction that compassionate <a
+            class="link-light" href="https://ojjdp.ojp.gov/programs/mentoring" target="_blank">mentorship</a> and <a class="link-light"
+            href="https://www.americanprogress.org/article/education-opportunities-prison-key-reducing-crime/" target="_blank">quality
+            education</a> can disrupt this cycle and reconnect incarcerated children to their communities and the world.
+        </p>
+        <p class="about-us-blurb-text">
+          We leverage our advanced degrees and diverse backgrounds to provide much-needed one-on-one tutoring to middle
+          through high school students at a juvenile rehabilitation center located near Seattle. We have tutored dozens
+          of students in subjects including Astronomy, Geometry, Algebra, Biology, Chemistry, Spanish, Art History,
+          English Literature, Financial Math, and Health Sciences. More recently, we have also begun to leverage
+          university resources and private funding to provide unique, hands-on science experiments for the students
+          after-school (see our publicly available lesson plans with more to come!). Since we began our initiative in
+          February 2022, we have had the privilege of witnessing eSTEAM-supported students graduate or complete their
+          time at the correctional facility and pursue more traditional education.
+        </p>
+
+        <p class="about-us-blurb-text">As scientists, while we have committed ourselves to a lifetime of learning how
+          the universe works, we have also taken on the responsibility to share that knowledge with everyone,
+          particularly incarcerated students with limited access to a quality education. Together, we are acting as
+          mentors to spark ceaseless curiosity in our students and light the way towards a brighter future.</p>
+      </div>
+    </div>
+    <div id="volunteers" class="row">
+      <div class="col">
+        <h3>Our Volunteers</h3>
+        <p>This program wouldn't be possible without the work of our spectacular group of volunteers - you can read more
+          about each of them below!</p>
+        <div class="row volunteer-grid text-center">
+          <!-- <div class="col-12 col-md-4">
+            <img src="resources/head.jpg" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark" href="WEBSITEHERE" target="_blank">NAME HERE</a></p>
+            <p class="volunteer-pronouns mb-1">PRONOUNS HERE</p>
+            <p class="volunteer-desc">PhD Student in DEPARTMENT HERE</p>
+          </div> -->
+          <div class="col-12 col-md-4">
+            <img src="resources/volunteers/sam_gilbert.jpg" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark" href="https://samrosegilbert.github.io/" target="_blank">Samantha
+                Gilbert-Janizek</a></p>
+            <p class="volunteer-pronouns mb-1">she/her</p>
+            <p class="volunteer-desc">PhD Student in Astronomy & Astrobiology</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="resources/volunteers/jake.JPG" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark">Jake Kurlander</a></p>
+            <p class="volunteer-pronouns mb-1">he/him</p>
+            <p class="volunteer-desc">PhD Student in Astronomy</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="resources/head.jpg" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark" href="WEBSITEHERE" target="_blank">NAME HERE</a></p>
+            <p class="volunteer-pronouns mb-1">PRONOUNS HERE</p>
+            <p class="volunteer-desc">PhD Student in DEPARTMENT HERE</p>
           </div>
         </div>
       </div>
     </div>
+    <br>
+    <div id="alumni" class="row">
+      <div class="col">
+        <h3>Our Alumni</h3>
+        <p>We continue to build on the foundation created by our former volunteers! Find out more about what they're doing now below. </p>
+        <div class="row volunteer-grid text-center">
+          <div class="col-12 col-md-4">
+            <img src="resources/volunteers/lupita.png" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark" href="http://lupitatovar.github.io/" target="_blank">Dr. Guadalupe Tovar
+                Mendoza</a></p>
+            <p class="volunteer-pronouns mb-1">she/ella</p>
+            <p class="volunteer-desc">PhD in Astronomy & Astrobiology</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="resources/volunteers/autum.png" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark" href="http://autumdowney.com/" target="_blank">Dr. Autum R. Downey</a></p>
+            <p class="volunteer-pronouns mb-1">she/her</p>
+            <p class="volunteer-desc">PhD in Geomicrobiology (Earth & Space Sciences)</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="resources/volunteers/liza.png" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark">Liza Young</a></p>
+            <p class="volunteer-pronouns mb-1">she/her</p>
+            <p class="volunteer-desc">Astrobiology Program Administrator, Astronomy Administrative Specialist</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="resources/volunteers/megan.png" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark">Megan Gialluca</a></p>
+            <p class="volunteer-pronouns mb-1">she/her</p>
+            <p class="volunteer-desc">PhD Student in Astronomy & Astrobiology</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="resources/volunteers/sam_garza.png" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark">Dr. Samantha Garza</a></p>
+            <p class="volunteer-pronouns mb-1">she/her</p>
+            <p class="volunteer-desc">PhD in Astronomy</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="resources/volunteers/lucas.png" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark">Dr. Lucas Fifer</a></p>
+            <p class="volunteer-pronouns mb-1">he/him</p>
+            <p class="volunteer-desc">PhD in Earth & Space Sciences, Astrobiology Program</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="resources/volunteers/pete.png" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark">Pete Wynn</a></p>
+            <p class="volunteer-pronouns mb-1">he/him</p>
+            <p class="volunteer-desc">PhD Student in Geochemistry & Astrobiology</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="resources/head.jpg" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark" href="https://stevenstetzler.com/" target="_blank">Dr. Steven Stetzler</a></p>
+            <p class="volunteer-pronouns mb-1">he/him</p>
+            <p class="volunteer-desc">PhD in Astronomy</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="resources/head.jpg" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark" href="https://www.tomwagg.com/" target="_blank">Dr. Tom Wagg</a></p>
+            <p class="volunteer-pronouns mb-1">he/him</p>
+            <p class="volunteer-desc">PhD in Astronomy</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="resources/head.jpg" class="img-fluid volunteer-picture mb-3">
+            <p class="volunteer-name"><a class="link-dark">Maya Harari</a></p>
+            <p class="volunteer-pronouns mb-1">she/her</p>
+            <p class="volunteer-desc">PhD Student in Physics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <div id="news" class="container slanted-container" style="background-color: #a5d9b5">
-      <div class="row">
-        <div class="col">
-          <h1>Recent News</h1>
-          <p>Check out the articles below for some recent news about eSTEAM!</p>
-
-          <div id="new-carousel" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card mb-3">
-                  <div class="row display-flex g-0">
-                    <div class="col-md-4 card-img-col rounded-start" style="background-image: url('resources/popsci-article-image.webp')"></div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title fw-bold fs-3">Volunteer astronomers bring wonders of the universe into prisons</h5>
-                        <p class="card-text fs-5">Popular Science wrote an article about the work we do in the eSTEAM program as well as Princeton's Prison Teaching Initiative.</p>
-                        <a target="_blank" href="https://www.popsci.com/science/astronomy-prison-education-programs/" class="btn btn-primary">Read more</a>
-                      </div>
+  <div id="news" class="container slanted-container" style="background-color: #a5d9b5">
+    <div class="row">
+      <div class="col">
+        <h1>In the News</h1>
+        <p>Check out the articles below for news about eSTEAM!</p>
+        <div id="new-carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card mb-3">
+                <div class="row display-flex g-0">
+                  <div class="col-md-4 card-img-col rounded-start"
+                    style="background-image: url('resources/popsci-article-image.webp')"></div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold fs-3">Volunteer astronomers bring wonders of the universe into
+                        prisons</h5>
+                      <p class="card-text fs-5">Popular Science wrote an article about the work we do in the eSTEAM
+                        program as well as Princeton's Prison Teaching Initiative.</p>
+                      <a target="_blank" href="https://www.popsci.com/science/astronomy-prison-education-programs/"
+                        class="btn btn-primary">Read more</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#new-carousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#new-carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button> -->
+            <div class="carousel-item">
+              <div class="card mb-3">
+                <div class="row display-flex g-0">
+                  <div class="col-md-4 card-img-col rounded-start"
+                    style="background-image: url('resources/Resized_20230814_151520-2.jpeg')"></div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold fs-3">Astrobites Article: Raising eSTEAM</h5>
+                      <p class="card-text fs-5">Astrobites interviewed eSTEAM founder Samantha Gilbert-Janizek on our
+                        founding, mission, and future.</p>
+                      <a target="_blank" href="https://astrobites.org/2024/06/21/raising-esteam/"
+                        class="btn btn-primary">Read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#new-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#new-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="resources" class="container slanted-container" style="background-color: #ad9dcf">
-      <div class="row">
-        <div class="col">
-          <h1>Teaching Resources</h1>
-          <p>This section includes a regularly updated collection of resources for teaching - use the buttons to explore our different lesson resources!</p>
-          <div class="row align-items-center">
-            <div class="col-12 col-md-3 text-center">
-                <div class="btn-group-vertical">
-                    <button class="btn btn-primary resource-toggle active" data-bs-target="#resource-carousel" data-bs-slide-to="0">Crystal Gardens </button>
-                    <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel" data-bs-slide-to="1">Solar Viewing </button>
-                    <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel" data-bs-slide-to="2">Reflectance Spectroscopy </button>
-                    <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel" data-bs-slide-to="3">Simulating Impactors </button>
-                    <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel" data-bs-slide-to="4">Mobile Planetarium Show </button>
-                    <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel" data-bs-slide-to="5">Galaxy Milk </button>
-                     <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel" data-bs-slide-to="6">Recreating Mars Viking </button>
-                    <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel" data-bs-slide-to="7">More coming soon! </button>
-                </div>
+  <div id="resources" class="container slanted-container" style="background-color: #ad9dcf;">
+    <div class="row">
+      <div class="col">
+        <h1>Teaching Resources</h1>
+        <p>This section includes a collection of resources for teaching - use the buttons to explore our different
+          lesson resources!</p>
+        <div class="row align-items-start">
+          <div class="col-12 col-md-3 text-center">
+            <div class="btn-group-vertical">
+              <button class="btn btn-primary resource-toggle active" data-bs-target="#resource-carousel"
+                data-bs-slide-to="0">Crystal Gardens </button>
+              <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel"
+                data-bs-slide-to="1">Solar Viewing </button>
+              <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel"
+                data-bs-slide-to="2">Reflectance Spectroscopy </button>
+              <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel"
+                data-bs-slide-to="3">Simulating Impactors </button>
+              <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel"
+                data-bs-slide-to="4">Mobile Planetarium Show </button>
+              <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel"
+                data-bs-slide-to="5">Galaxy Milk </button>
+              <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel"
+                data-bs-slide-to="6">Recreating Mars Viking </button>
+              <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel"
+                data-bs-slide-to="7">Mars Rover</button>
+              <button class="btn btn-primary resource-toggle" data-bs-target="#resource-carousel"
+                data-bs-slide-to="8">Slime Mold Mazes</button>
             </div>
-            <div class="col">
-                <div id="resource-carousel" class="carousel slide">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
-                            <img src="resources/crystal_garden_lesson.png" class="my-2" style="max-width: 300px">
-                            <h3>Crystal Gardens</h3>
-                            <p class="mb-4 text-start" style="font-size:16px">
-                                Students create their own crystal gardens in a test tube to illustrate how we investigate the core astrobiological question: are we alone in the universe? By the end of the activity, students will appreciate the difficulty of distinguishing living processes from non-living ones.
-                            </p>
-                            <div class="row text-center align-items-center">
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Lesson Plan</p>
-                                        <i class="fa fa-file-word"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/document/d/1LCz8wj_Nlks_bMPqPwWjPX3p6YUqtVuyM_MiU62GxOs/edit?usp=sharing"></a>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Slideshow</p>
-                                        <i class="fa fa-file-powerpoint"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/presentation/d/1Rp4scC2uMiCbP0GaYsOEBgmgw0OGv7o4F7lkprvcHUc/edit#slide=id.g2060e810e70_3_38"></a>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Growing Crystals</p>
-                                        <i class="fa fa-file-video"></i>
-                                        <a class="d-none" target="_blank" href="resources/crystal-gardens_timelapse.mp4" download></a>
-                                    </div>
-                                </div>
-                            </div>
+          </div>
+          <div class="col">
+            <div id="resource-carousel" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
+                    <img src="resources/crystal_garden_lesson.png" class="my-2" style="max-width: 300px">
+                    <h3>Crystal Gardens</h3>
+                    <p class="mb-4 text-start" style="font-size:16px">
+                      Students create their own crystal gardens in a test tube to illustrate how we investigate the core
+                      astrobiological question: are we alone in the universe? By the end of the activity, students will
+                      appreciate the difficulty of distinguishing living processes from non-living ones.
+                    </p>
+                    <div class="row text-center align-items-start">
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Lesson Plan</p>
+                          <i class="fa fa-file-word"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/document/d/1LCz8wj_Nlks_bMPqPwWjPX3p6YUqtVuyM_MiU62GxOs/edit?usp=sharing"></a>
                         </div>
                       </div>
-                      <div class="carousel-item">
-                        <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
-                            <img src="resources/solar_viewing_student_drawings.jpg" class="my-2" style="max-width: 300px">
-                            <h3>Solar Viewing</h3>
-                            <p class="mb-4 text-start" style="font-size:16px">
-                                Students will observe the sun using a 5" diameter refracting telescope equipped with a 
-                                solar filter. Depending on the solar conditions, students may be able to observe solar
-                                prominences and sunspots. In the accompanying discussion, students will learn about our 
-                                star and how it sustains and at times threatens life on Earth.
-                            </p>
-                            <div class="row text-center align-items-center">
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Lesson Plan</p>
-                                        <i class="fa fa-file-word"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/document/d/1IbaZxAcN_3TYaFG0wMmFalY8lVx_30AGUqu2Dq7bcqQ/edit?usp=sharing"></a>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Slideshow</p>
-                                        <i class="fa fa-file-powerpoint"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/presentation/d/1T7MlSD3oczWSa7WH_M5jFXgy3-pSIvjrnV_bXln28Vg/edit?usp=sharing"></a>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Student Worksheet</p>
-                                        <i class="fa fa-file-word"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/document/d/1L75T5PciLWO28U6-2QaoTsCJkxsWcOynwMGnpYMa3TA/edit?usp=sharing"></a>
-                                    </div>
-                                </div>
-                            </div>
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Slideshow</p>
+                          <i class="fa fa-file-powerpoint"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/presentation/d/1Rp4scC2uMiCbP0GaYsOEBgmgw0OGv7o4F7lkprvcHUc/edit#slide=id.g2060e810e70_3_38"></a>
                         </div>
                       </div>
-                      <div class="carousel-item">
-                        <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
-                            <img src="resources/reflected_light.png" class="my-2" style="max-width: 300px">
-                            <h3>Reflectance Spectroscopy</h3>
-                            <p class="mb-4 text-start" style="font-size:16px">
-                                Students will use handheld spectrometers to measure the albedo of various surface 
-                                types, including leaves, basalt, and anorthosite. Students will plot the wavelength-dependent
-                                albedos of these samples and compare where their reflected light "peaks". Students will relate
-                                this activity to how astrobiologists will use reflected light spectroscopy to characterize
-                                the atmospheres and surfaces of exoplanets.
-                            </p>
-                            <div class="row text-center align-items-center">
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Lesson Plan</p>
-                                        <i class="fa fa-file-word"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/document/d/1GbW2pnSr5LTptFzWkFbsujS8gDmbTYuc49M90LV_Q7A/edit?usp=sharing"></a>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Slideshow</p>
-                                        <i class="fa fa-file-powerpoint"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/presentation/d/1Y7bR-oMZMHZNqZu4UsTxzwOQBAVYDhNe5hP9kw1oD8k/edit?usp=sharing"></a>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Student Worksheet</p>
-                                        <i class="fa fa-file-word"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/document/d/1Pxj0WtfcvuxcjlizGw8HZweOvSi7HckaPvkZRSziGyg/edit?usp=sharing"></a>
-                                    </div>
-                                </div>
-                            </div>
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Growing Crystals</p>
+                          <i class="fa fa-file-video"></i>
+                          <a class="d-none" target="_blank" href="resources/crystal-gardens_timelapse.mp4" download></a>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
-                            <img src="resources/balsa_drop.png" class="my-2" style="max-width: 150px">
-                            <h3>Simulating Impactors</h3>
-                            <p class="mb-4 text-start" style="font-size:16px">
-                                Students will simulate planetary impact events by dropping various projectiles into a bin
-                                containing sand and a glitter "ejecta" top-layer. Students will measure the size of the 
-                                craters they create as a function of drop height and projectile mass. The students will
-                                work together to record their pooled results on post-it note histograms. Students will
-                                relate this activity to how planetary scientists use crater counting on the Moon and Mars
-                                to comparatiely "age" these bodies.
-                            </p>
-                            <div class="row text-center align-items-center">
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Lesson Plan</p>
-                                        <i class="fa fa-file-word"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/document/d/108HK0RWuMxIZoMBF1dGOIPbE9FmC59oyJNbDZwhzOng/edit?usp=sharing"></a>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Student Worksheet</p>
-                                        <i class="fa fa-file-word"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/spreadsheets/d/1h1I80opd96FmatEKXqw7ZwVP40fKxMNp/edit?usp=sharing&ouid=112808536954962285119&rtpof=true&sd=true"></a>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Slow-mo Impactor</p>
-                                        <i class="fa fa-file-video"></i>
-                                        <a class="d-none" target="_blank" href="resources/balsa_drop.mov" download></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
-                            <img src="resources/uwmp.jpg" class="my-2" style="max-width: 150px">
-                            <h3>Mobile Planetarium Show</h3>
-                            <p class="mb-4 text-start" style="font-size:16px">
-                                The planetarium comes to the students! Students will view a planetarium show that takes
-                                them through our Solar System and out to the edges of the observable universe. We thank the <a class="link-dark" href="https://astro.washington.edu/uw-mobile-planetarium">UW
-                                Astronomy department</a> for providing the mobile planetarium as a teaching and outreach resource.
-                            </p>
-                            <div class="row text-center align-items-center">
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Lesson Plan</p>
-                                        <i class="fa fa-file-word"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/document/d/1QcjlpdfJZB4Q6leqWMmYpiMzAiSIh_HJa2auBX0L51E/edit?usp=sharing"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
-                            <img src="resources/galaxy_milk.png" class="my-2" style="max-width: 150px">
-                            <h3>Galaxy Milk</h3>
-                            <p class="mb-4 text-start" style="font-size:16px">
-                                Students will create their own galaxies using a surfactant reaction between food-colored milk and
-                                dish soap. Students will learn about the structure of the Milky Way and other types of galaxies
-                                we have observed. Students will make the connection between the billions of galaxies in the universe
-                                and the likelihood that life may exist somewhere among them.
-                            </p>
-                            <div class="row text-center align-items-center">
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Lesson Plan</p>
-                                        <i class="fa fa-file-word"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/document/d/1RTNtp-CzweR7FvYom3iN-IuIPzF4PVDr_wwVhAwKoEs/edit?usp=sharing"></a>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Slideshow</p>
-                                        <i class="fa fa-file-powerpoint"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/presentation/d/1ufcWaDinu3oQFfBaxvQ9OH0lyZixsFxkHkCdCXaAPVY/edit?usp=sharing"></a>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Creating a Galaxy</p>
-                                        <i class="fa fa-file-video"></i>
-                                        <a class="d-none" target="_blank" href="resources/galaxy_milk.mov" download></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
-                            <img src="resources/viking.jpg" class="my-2" style="max-width: 150px">
-                            <h3>Recreating Mars Viking</h3>
-                            <p class="mb-4 text-start" style="font-size:16px">
-                                Students will recreate the Viking lander biology experiments conducted on Mars in 1976. Viking scientists on Earth used robotic technology to remotely instigate chemical reactions with the Martian surface in an attempt to identify signs of life. In recreating these experiments, students will learn how astrobiologists define life to accommodate unfamiliar exobiology, and how discriminating between living and non-living processes is more challenging than it seems.
-                            </p>
-                            <div class="row text-center align-items-center">
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Lesson Plan</p>
-                                        <i class="fa fa-file-word"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/document/d/1cSWCzAqhVRPZURc61F4udM6t5MTZT2lwfC4ZyQQc4Yo/edit?usp=sharing"></a>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="py-4 resource-downloader">
-                                        <p class="m-0">Slideshow</p>
-                                        <i class="fa fa-file-powerpoint"></i>
-                                        <a class="d-none" target="_blank" href="https://docs.google.com/presentation/d/1_QAqOqW0wDVbDNtGm3pw3zAMTP2nfnQy/edit?usp=sharing&ouid=112808536954962285119&rtpof=true&sd=true"></a>
-                                    </div>
-                                </div>
-                            </div>
-                      </div>
-                      </div>
-                      <div class="carousel-item">
-                        Check back soon for more!
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
+                    <img src="resources/solar_viewing_student_drawings.jpg" class="my-2" style="max-width: 300px">
+                    <h3>Solar Viewing</h3>
+                    <p class="mb-4 text-start" style="font-size:16px">
+                      Students will observe the sun using a 5" diameter refracting telescope equipped with a
+                      solar filter. Depending on the solar conditions, students may be able to observe solar
+                      prominences and sunspots. In the accompanying discussion, students will learn about our
+                      star and how it sustains and at times threatens life on Earth.
+                    </p>
+                    <div class="row text-center align-items-start">
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Lesson Plan</p>
+                          <i class="fa fa-file-word"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/document/d/1IbaZxAcN_3TYaFG0wMmFalY8lVx_30AGUqu2Dq7bcqQ/edit?usp=sharing"></a>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Slideshow</p>
+                          <i class="fa fa-file-powerpoint"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/presentation/d/1T7MlSD3oczWSa7WH_M5jFXgy3-pSIvjrnV_bXln28Vg/edit?usp=sharing"></a>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Student Worksheet</p>
+                          <i class="fa fa-file-word"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/document/d/1L75T5PciLWO28U6-2QaoTsCJkxsWcOynwMGnpYMa3TA/edit?usp=sharing"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
+                    <img src="resources/reflected_light.png" class="my-2" style="max-width: 300px">
+                    <h3>Reflectance Spectroscopy</h3>
+                    <p class="mb-4 text-start" style="font-size:16px">
+                      Students will use handheld spectrometers to measure the albedo of various surface
+                      types, including leaves, basalt, and anorthosite. Students will plot the wavelength-dependent
+                      albedos of these samples and compare where their reflected light "peaks". Students will relate
+                      this activity to how astrobiologists will use reflected light spectroscopy to characterize
+                      the atmospheres and surfaces of exoplanets.
+                    </p>
+                    <div class="row text-center align-items-start">
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Lesson Plan</p>
+                          <i class="fa fa-file-word"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/document/d/1GbW2pnSr5LTptFzWkFbsujS8gDmbTYuc49M90LV_Q7A/edit?usp=sharing"></a>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Slideshow</p>
+                          <i class="fa fa-file-powerpoint"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/presentation/d/1Y7bR-oMZMHZNqZu4UsTxzwOQBAVYDhNe5hP9kw1oD8k/edit?usp=sharing"></a>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Student Worksheet</p>
+                          <i class="fa fa-file-word"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/document/d/1Pxj0WtfcvuxcjlizGw8HZweOvSi7HckaPvkZRSziGyg/edit?usp=sharing"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
+                    <img src="resources/balsa_drop.png" class="my-2" style="max-width: 150px">
+                    <h3>Simulating Impactors</h3>
+                    <p class="mb-4 text-start" style="font-size:16px">
+                      Students will simulate planetary impact events by dropping various projectiles into a bin
+                      containing sand and a glitter "ejecta" top-layer. Students will measure the size of the
+                      craters they create as a function of drop height and projectile mass. The students will
+                      work together to record their pooled results on post-it note histograms. Students will
+                      relate this activity to how planetary scientists use crater counting on the Moon and Mars
+                      to comparatiely "age" these bodies.
+                    </p>
+                    <div class="row text-center align-items-start">
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Lesson Plan</p>
+                          <i class="fa fa-file-word"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/document/d/108HK0RWuMxIZoMBF1dGOIPbE9FmC59oyJNbDZwhzOng/edit?usp=sharing"></a>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Student Worksheet</p>
+                          <i class="fa fa-file-word"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/spreadsheets/d/1h1I80opd96FmatEKXqw7ZwVP40fKxMNp/edit?usp=sharing&ouid=112808536954962285119&rtpof=true&sd=true"></a>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Slow-mo Impactor</p>
+                          <i class="fa fa-file-video"></i>
+                          <a class="d-none" target="_blank" href="resources/balsa_drop.mov" download></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
+                    <img src="resources/uwmp.jpg" class="my-2" style="max-width: 150px">
+                    <h3>Mobile Planetarium Show</h3>
+                    <p class="mb-4 text-start" style="font-size:16px">
+                      The planetarium comes to the students! Students will view a planetarium show that takes
+                      them through our Solar System and out to the edges of the observable universe. We thank the <a
+                        class="link-dark" href="https://astro.washington.edu/uw-mobile-planetarium">UW
+                        Astronomy department</a> for providing the mobile planetarium as a teaching and outreach
+                      resource.
+                    </p>
+                    <div class="row text-center align-items-start">
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Lesson Plan</p>
+                          <i class="fa fa-file-word"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/document/d/1QcjlpdfJZB4Q6leqWMmYpiMzAiSIh_HJa2auBX0L51E/edit?usp=sharing"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
+                    <img src="resources/galaxy_milk.png" class="my-2" style="max-width: 150px">
+                    <h3>Galaxy Milk</h3>
+                    <p class="mb-4 text-start" style="font-size:16px">
+                      Students will create their own galaxies using a surfactant reaction between food-colored milk and
+                      dish soap. Students will learn about the structure of the Milky Way and other types of galaxies
+                      we have observed. Students will make the connection between the billions of galaxies in the
+                      universe
+                      and the likelihood that life may exist somewhere among them.
+                    </p>
+                    <div class="row text-center align-items-start">
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Lesson Plan</p>
+                          <i class="fa fa-file-word"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/document/d/1RTNtp-CzweR7FvYom3iN-IuIPzF4PVDr_wwVhAwKoEs/edit?usp=sharing"></a>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Slideshow</p>
+                          <i class="fa fa-file-powerpoint"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/presentation/d/1ufcWaDinu3oQFfBaxvQ9OH0lyZixsFxkHkCdCXaAPVY/edit?usp=sharing"></a>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Creating a Galaxy</p>
+                          <i class="fa fa-file-video"></i>
+                          <a class="d-none" target="_blank" href="resources/galaxy_milk.mov" download></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
+                    <img src="resources/viking.jpg" class="my-2" style="max-width: 150px">
+                    <h3>Recreating Mars Viking</h3>
+                    <p class="mb-4 text-start" style="font-size:16px">
+                      Students will recreate the Viking lander biology experiments conducted on Mars in 1976. Viking
+                      scientists on Earth used robotic technology to remotely instigate chemical reactions with the
+                      Martian surface in an attempt to identify signs of life. In recreating these experiments, students
+                      will learn how astrobiologists define life to accommodate unfamiliar exobiology, and how
+                      discriminating between living and non-living processes is more challenging than it seems.
+                    </p>
+                    <div class="row text-center align-items-start">
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Lesson Plan</p>
+                          <i class="fa fa-file-word"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/document/d/1cSWCzAqhVRPZURc61F4udM6t5MTZT2lwfC4ZyQQc4Yo/edit?usp=sharing"></a>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Slideshow</p>
+                          <i class="fa fa-file-powerpoint"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/presentation/d/1_QAqOqW0wDVbDNtGm3pw3zAMTP2nfnQy/edit?usp=sharing&ouid=112808536954962285119&rtpof=true&sd=true"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
+                    <img src="resources/lego_rover_collage.png" class="my-2" style="max-width: 150px">
+                    <h3>Lego Mars Rover</h3>
+                    <p class="mb-4 text-start" style="font-size:16px">
+                      Students will replicate the challenging engineering problems encountered by scientists 
+                      who design rovers by creating their own using Lego. Their models will use motors to drive
+                      the rover over rocky Martian "soil" and control a scoop to retrieve samples. After assembly,
+                      students will run a mission course try to successfully collect their samples and return to 
+                      Home Base. This activity will allow students to use their creativity when making design decisions
+                      and testing their rovers.
+                    </p>
+                    <!-- <div class="row text-center align-items-start">
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Lesson Plan</p>
+                          <i class="fa fa-file-word"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/document/d/1cSWCzAqhVRPZURc61F4udM6t5MTZT2lwfC4ZyQQc4Yo/edit?usp=sharing"></a>
+                        </div>
+                      </div> -->
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="p-3 bg-light text-center" style="border: 3px solid lightgrey; border-radius: 25px">
+                    <img src="resources/slime_mold_maze.png" class="my-2" style="max-width: 150px">
+                    <h3>Slime Mold Mazes</h3>
+                    <p class="mb-4 text-start" style="font-size:16px">
+                      Students will use a microscope to observe <i>Physarum polycephalum</i>, 
+                      known as "slime mold," and place their samples into 3-D printed mazes
+                      and observe their behavior over time. This experiment will allow students to 
+                      study cell structure and to practice making scientific observations.
+                    </p>
+                    <div class="row text-center align-items-start">
+                      <div class="col">
+                        <div class="py-4 resource-downloader">
+                          <p class="m-0">Lesson Plan</p>
+                          <i class="fa fa-file-word"></i>
+                          <a class="d-none" target="_blank"
+                            href="https://docs.google.com/document/d/1KEJljoLHWA58dNElwlgyzlLkVXb7j2F2U3ErIgybEEI/edit?usp=sharing"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  Check back soon for more!
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Resources for other people to use (maybe also a link to a GitHub repo with full collection) -->
+  </div>
+  <!-- Resources for other people to use (maybe also a link to a GitHub repo with full collection) -->
 
-    <div id="contact" class="container slanted-container" style="background-color: #c1dedc">
-      <div class="row pb-3">
-        <div class="col">
-          <h1>Contact Us</h1>
-          <p>Want to hear more about the program or get involved? Are you trying to set up your own prison outreach program? Do you have any other questions? Send us an email with one of the buttons below!</p>
-          <div class="btn-group w-100">
-            <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=More Information about eSTEAM">Tell me more about eSTEAM</a>
-            <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=Joining eSTEAM">I want to get involved!</a>
-            <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=Setting up a prison outreach program">Advice/info for setting up a similar program</a>
-            <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=A question about eSTEAM">Any other questions</a>
-          </div>
-          <div class="btn-group-vertical w-100">
-            <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=More Information about eSTEAM">Tell me more about eSTEAM</a>
-            <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=Joining eSTEAM">I want to get involved!</a>
-            <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=Setting up a prison outreach program">Advice/info for setting up a similar program</a>
-            <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=A question about eSTEAM">Any other questions</a>
-          </div>
+  <div id="contact" class="container slanted-container" style="background-color: #c1dedc">
+    <div class="row pb-3">
+      <div class="col">
+        <h1>Contact Us</h1>
+        <p>Want to hear more about the program or get involved? Are you trying to set up your own prison outreach
+          program? Do you have any other questions? Send us an email with one of the buttons below!</p>
+        <div class="btn-group w-100">
+          <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=More Information about eSTEAM">Tell me
+            more about eSTEAM</a>
+          <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=Joining eSTEAM">I want to get
+            involved!</a>
+          <a class="btn btn-outline-dark"
+            href="mailto:E-steam@uw.edu?Subject=Setting up a prison outreach program">Advice/info for setting up a
+            similar program</a>
+          <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=A question about eSTEAM">Any other
+            questions</a>
+        </div>
+        <div class="btn-group-vertical w-100">
+          <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=More Information about eSTEAM">Tell me
+            more about eSTEAM</a>
+          <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=Joining eSTEAM">I want to get
+            involved!</a>
+          <a class="btn btn-outline-dark"
+            href="mailto:E-steam@uw.edu?Subject=Setting up a prison outreach program">Advice/info for setting up a
+            similar program</a>
+          <a class="btn btn-outline-dark" href="mailto:E-steam@uw.edu?Subject=A question about eSTEAM">Any other
+            questions</a>
         </div>
       </div>
     </div>
-    <!-- Contact form that sends an email to Sam -->
+  </div>
+  <!-- Contact form that sends an email to Sam -->
 
-    <div class="container text-white">
-      <footer class="pt-3 my-4">
-        <p class="fw-bold text-center border-bottom pb-3 mb-3 fs-4">
-          We thank our generous donors currently funding our volunteer efforts
-          <br />
-          <a href="https://www.autodesk.com/" class="link-light" target="_blank">Autodesk</a>
+  <div class="container text-white">
+    <footer class="pt-3 my-4">
+      <p class="fw-bold text-center border-bottom pb-3 mb-3 fs-4">
+        We thank our generous donors that fund our volunteer efforts!
+        <br />
+        <!-- update sponsers here -->
+        <!-- <a href="https://www.autodesk.com/" class="link-light" target="_blank">Autodesk</a>
           and the
           <a href="https://www.waspacegrant.org/" class="link-light" target="_blank">Washington NASA Space Grant program</a>
-        </p>
-        <p class="text-center">© 2023 UW eSTEAM - built by <a class="link-light" href="https://www.tomwagg.com">Tom Wagg</a></p>
-      </footer>
-    </div>
+          -->
+          <br />
+      
+          You can donate directly below by clicking the button or scanning the QR code and <u>putting "eSTEAM" in the comments</u>.
+          <br />
+          <br />
+          <a class="btn btn-primary" name="donations" hrf="https://www.washington.edu/giving/make-a-gift/?source=dsc-116692&source_typ=3">Donate Here</button>
+          <img src="resources/Donation QR Code.png" class="my-2" style="max-width: 200px"></a>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/index.js"></script>
-  </body>
+      </p>
+      <p class="text-center">© 2026 UW eSTEAM - built by <a class="link-light" href="https://www.tomwagg.com" target="_blank">Tom
+          Wagg</a></p>
+    </footer>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
