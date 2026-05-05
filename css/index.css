@@ -40,23 +40,30 @@ body {
     font-size: 16px;
 }
 
+/* News and Resources */
+
 .carousel .row.display-flex {
     display: flex;
     flex-wrap: wrap;
 }
+
 .carousel .row.display-flex > [class*='col-'] {
     display: flex;
     flex-direction: column;
 }
 
-/* Misc */
+.carousel-control-next, .carousel-control-prev {
+    filter: invert(100%);
+}
 
 .card-img-col {
     background-position: center;
     background-size: cover;
-    min-height: 200px;
+    min-height: 30vh;
+    object-fit: cover;
 }
 
+/* Misc */
 .header-text {
     color: white;
     text-align: left;
